@@ -1,0 +1,96 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Calibri";
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.para1, .para2, .para3{
+  position:relative;
+  opacity: inherit;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.para1{
+  background-image:url('../img/image1.jpg');
+  min-height:100%; 
+}
+
+.para2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.para3{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color:#ddd;
+}
+
+.paratext{
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.paratext1{
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.paratext .border.trans{
+  background-color:transparent;
+}
+
+h1{
+  font-size:125px;
+}
+
+h2{
+  font-size:55px;
+}
+
+h3{
+  font-size:45px;
+  line-height: 1.2em;
+}
+
+a:link, a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+@media(max-width:500px){
+  .para1, .para2, .para3{
+    background-attachment:scroll;
+  }
+}
