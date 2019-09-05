@@ -89,7 +89,7 @@ a:link, a:visited{
   text-decoration: none;
 }
 
-@media(min-width:500px){
+@media(max-width:500px){
   .para1, .para2, .para3{
     background-attachment:scroll;
   }
