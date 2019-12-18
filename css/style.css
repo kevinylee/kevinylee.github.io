@@ -1,4 +1,4 @@
-body, html{
+body, html {
   height:100%;
   margin:0;
   font-size:16px;
@@ -8,7 +8,7 @@ body, html{
   color:#666;
 }
 
-.para1, .para2, .para3{
+.para1, .para2, .para3 {
   position:relative;
   opacity: inherit;
   background-position:center;
@@ -17,37 +17,37 @@ body, html{
   background-attachment:fixed;
 }
 
-.para1{
+.para1 {
   background-image:url('../img/image1.jpg');
   min-height:100%;
 }
 
-.para2{
+.para2 {
   background-image:url('../img/image2.jpg');
   min-height:400px;
 }
 
-.para3{
+.para3 {
   background-image:url('../img/image3.jpg');
   min-height:400px;
 }
 
-.section{
+.section {
   text-align: center;
   padding: 50px 80px;
 }
 
-.section-light{
+.section-light {
   background-color: #f4f4f4;
   color:#666;
 }
 
-.section-dark{
+.section-dark {
   background-color: #282e34;
   color:#ddd;
 }
 
-.paratext{
+.paratext {
   position: absolute;
   top: 15%;
   width: 100%;
@@ -57,7 +57,7 @@ body, html{
   text-transform: uppercase;
 }
 
-.paratext1{
+.paratext1 {
   position: absolute;
   top: 5%;
   width: 100%;
@@ -67,25 +67,25 @@ body, html{
   text-transform: uppercase;
 }
 
-.paratext .border.trans{
+.paratext .border.trans {
   background-color:transparent;
 }
 
-h1{
+h1 {
   font-size:125px;
 }
 
-h2{
+h2 {
   font-size:55px;
 }
 
-h3{
+h3 {
   font-size:45px;
   line-height: 1.2em;
   margin: 0px;
 }
 
-h5{
+h5 {
   display: flex;
   justify-content: center;
 }
@@ -99,12 +99,12 @@ h5{
   width: 50%;
 }
 
-a:link, a:visited{
+a:link, a:visited {
   color:white;
   text-decoration: none;
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
   .para1, .para2, .para3{
     background-attachment:scroll;
   }
