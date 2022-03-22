@@ -101,7 +101,7 @@ h5 {
 
 a:link, a:visited {
   color:white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 @media(max-width:500px) {
