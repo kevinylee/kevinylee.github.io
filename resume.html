@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin Lee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js"></script>
+    <script src="js/cycling-word.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.getElementById('eng-toggle');
+        const img = document.getElementById('resume-img');
+        toggle.addEventListener('click', () => {
+          const isOpen = img.style.display === 'block';
+          img.style.display = isOpen ? 'none' : 'block';
+          toggle.classList.toggle('active', !isOpen);
+        });
+
+        const vidToggle = document.getElementById('vid-toggle');
+        const vidImg = document.getElementById('vid-resume-img');
+        vidToggle.addEventListener('click', () => {
+          const isOpen = vidImg.style.display === 'block';
+          vidImg.style.display = isOpen ? 'none' : 'block';
+          vidToggle.classList.toggle('active', !isOpen);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <div id="nav-bar">
+          <a href="index.html">home</a>
+          <a href="resume.html" class="active">resume</a>
+          <a href="vids.html">vids</a>
+          <a href="thoughts.html">thoughts</a>
+        </div>
+      </nav>
+      
+      <section id="introduction">
+        <div id="hirers">
+          <p><a id="eng-toggle" style="cursor:pointer;">for the engineering hirers</a></p>
+          <p><a id="vid-toggle" style="cursor:pointer;">for the social media, video, editor hirers</a></p>
+          <img id="resume-img" src="img/kevin_lee_resume.png" alt="Kevin Lee Resume" />
+          <img id="vid-resume-img" src="img/Kevin_Lee_Video_Resume.jpg" alt="Kevin Lee Video Resume" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

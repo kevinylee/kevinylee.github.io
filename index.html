@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kevin Lee</title>
-  <link href="https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin Lee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js"></script>
+    <script src="js/cycling-word.js" defer></script>
+  </head>
 
-<body>
-  <div class="para1">
-    <div class="paratext1">
-        <h1>Kevin Lee</h1>
-        <h2>Seattle, WA</h2>
-    </div>
-  </div>
-
-  <section class="section section-light">
-    <h3>I'm Kevin.</h3>
-    <h3>Software Engineering.</h3>
-    <a href="Kevin_Lee_Software_Engineer_Resume.pdf" target="_blank"><img src="img/Resume1.png" id="resume" height="100px" width="100px"/></a>
-  </section>
-
-  <div class="para2">
-    <div class="paratext">
-      <span class="border trans">
-        <h2>You're in the middle.</h2>
-      </span>
-    </div>
-  </div>
-
-  <section class="section section-dark">
-    <h3>
-      <p>Developer of <a href="https://www.saigondeliuw.com" target="_blank">Saigon Deli</a></p>
-      <p>Developer of <a href="https://www.tokyoteriyakiwok.com" target="_blank">Tokyo Teriyaki & Wok</a></p>
-    </h3>
-  </section>
-
-  <div class="para3">
-    <div class="paratext">
-      <span class="border trans">
-        <h2>The End.</h2>
-      </span>
-    </div>
-  </div>
-
-  <section class="section section-light">
-    <h5>
-        <a href="https://www.linkedin.com/in/kevin-lee-250a6b172/" target="_blank">
-        <img src="img/LinkedIn.png" id="linked" alt="LinkedIn"> </a>
-        <a href="https://www.github.com/kevinylee" target="_blank">
-        <img src="img/GitHub-Logo.png" id="github" alt="GitHub"> </a>
-    </h5>
-  </section>
-</body>
+  <body>
+    <main>
+      <nav>
+        <div id="nav-bar">
+          <a href="index.html" class="active">home</a>
+          <a href="resume.html">resume</a>
+          <a href="vids.html">vids</a>
+          <a href="thoughts.html">thoughts</a>
+        </div>
+      </nav>
+      
+      <section id="introduction">
+        <div id="name-desc">
+          <h1 id="name">Kevin Y. Lee</h1>
+          <p id="desc">[creates through code and video]</p>
+        </div>
+        </div>
+        <p>I like <span id="cycling-word"></span></p>
+      </section>
+      <img src="img/profilepic.jpg" />
+      <section id="credits">
+        <ul class="credit-list">
+          <li>Building a <a target="_blank" class="under-link" href="https://plantings.vercel.app/">donation platform</a>.</li>
+          <li>Building a "food".</li>
+          <li>Built <a target="_blank" class="under-link" href="https://saigondeliuw.com/">www.saigondeliuw.com</a>.</li>
+          <li>Built <a target="_blank" class="under-link" href="https://www.tokyoteriyakiwok.com/">www.tokyoteriyakiwok.com</a>.</li>
+          <li>BS, computer science @University of Washington</li>
+          <li>Located in Seattle.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

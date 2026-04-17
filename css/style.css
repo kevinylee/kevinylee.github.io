@@ -1,111 +1,127 @@
-body, html {
-  height:100%;
-  margin:0;
-  font-size:16px;
-  font-family:"Miriam Libre", sans-serif;
-  font-weight:400;
-  line-height:1.8em;
-  color:#666;
+:root {
+  --bg: #ffffff;
+  --text: #111111;
 }
 
-.para1, .para2, .para3 {
-  position:relative;
-  opacity: inherit;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+:root.night {
+  --bg: #000000;
+  --text: #ffffff;
 }
 
-.para1 {
-  background-image:url('../img/image1.jpg');
-  min-height:100%;
-}
-
-.para2 {
-  background-image:url('../img/image2.jpg');
-  min-height:400px;
-}
-
-.para3 {
-  background-image:url('../img/image3.jpg');
-  min-height:400px;
-}
-
-.section {
-  text-align: center;
-  padding: 50px 80px;
-}
-
-.section-light {
-  background-color: #f4f4f4;
-  color:#666;
-}
-
-.section-dark {
-  background-color: #282e34;
-  color:#ddd;
-}
-
-.paratext {
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  color: white;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.paratext1 {
-  position: absolute;
-  top: 5%;
-  width: 100%;
-  text-align: center;
-  color: white;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.paratext .border.trans {
-  background-color:transparent;
-}
-
-h1 {
-  font-size:125px;
-}
-
-h2 {
-  font-size:55px;
-}
-
-h3 {
-  font-size:45px;
-  line-height: 1.2em;
-  margin: 0px;
-}
-
-h5 {
+body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  font-size:16px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-#resume {
-  margin: 25px;
-  margin-bottom: 0px;
+nav {
+  margin-top: 20px;
 }
 
-#linked, #github {
-  width: 50%;
+#nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
 }
 
-a:link, a:visited {
-  color:white;
+#introduction {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#introduction p {
+  text-align: left;
+  margin-top: 48px;
+}
+
+#name-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#name-desc h1,
+#name-desc p {
+  margin: 0;
+}
+
+main {
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 140px;
+  margin: 0 auto;
+}
+
+img {
+  width: 500px;
+  margin-top: 50px;
+}
+
+#resume-img, #vid-resume-img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 12px;
+  display: none;
+}
+
+#cycling-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#cycling-word.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#cycling-word.exit {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.active {
+  color: #666666;
+}
+
+.credits {
+  margin-top: 10px;
+}
+
+#hirers p {
+  margin: 10px 0;
+}
+
+#hirers a {
   text-decoration: underline;
 }
 
-@media(max-width:500px) {
-  .para1, .para2, .para3{
-    background-attachment:scroll;
-  }
+.credit-list {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.credit-list li {
+  margin-bottom: 12px;
+}
+
+.under-link {
+  text-decoration: underline;
 }
