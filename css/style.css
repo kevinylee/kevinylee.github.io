@@ -91,6 +91,11 @@ img {
   display: none;
 }
 
+#resume-img, #vid-resume-img {
+  height: 90vh;
+  border: none;
+}
+
 #cycling-word {
   display: inline-block;
   opacity: 0;
