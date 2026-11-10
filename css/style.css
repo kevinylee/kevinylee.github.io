@@ -84,19 +84,10 @@ img {
   display: block;
 }
 
-#resume-img, #vid-resume-img {
+#resume-img {
   width: 100%;
   max-width: 800px;
   margin-top: 12px;
-}
-
-#vid-resume-img {
-  display: none;
-}
-
-#vid-resume-img {
-  height: 90vh;
-  border: none;
 }
 
 #cycling-word {

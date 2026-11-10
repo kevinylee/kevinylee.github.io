@@ -11,17 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/theme.js"></script>
     <script src="js/cycling-word.js" defer></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const vidToggle = document.getElementById('vid-toggle');
-        const vidImg = document.getElementById('vid-resume-img');
-        vidToggle.addEventListener('click', () => {
-          const isOpen = vidImg.style.display === 'block';
-          vidImg.style.display = isOpen ? 'none' : 'block';
-          vidToggle.classList.toggle('active', !isOpen);
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -37,9 +26,7 @@
       
       <section id="introduction">
         <div id="hirers">
-          <p><a id="vid-toggle" style="cursor:pointer;">for the social media, video, editor hirers</a></p>
           <img id="resume-img" src="img/Kevin_Y_Lee_Resume.png" alt="Kevin Lee Resume" />
-          <embed id="vid-resume-img" src="img/Kevin_Lee_Edit_Resume.pdf" type="application/pdf" />
         </div>
       </section>
     </main>
