@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kevin Lee - Blog</title>
+    <title>Kevin Lee - Projects</title>
+    <meta name="description" content="Video editing and social media work for food creators by Kevin Lee.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/theme.js"></script>
+    <style>
+      main.wide { width: 880px; }
+      .block { margin-top: 72px; }
+      .block p { line-height: 1.6; }
+      .block h2 { font-size: 22px; margin: 0; }
+      .head-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px; }
+      .muted2 { color: #666666; }
+      :root.night .muted2 { color: #a3a3a3; }
+      .stats-bar { list-style: none; margin: 4px 0 0; padding: 24px 0; display: flex; flex-wrap: wrap; gap: 32px; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }
+      .stats-bar li { flex: 1 1 180px; display: flex; flex-direction: column; gap: 2px; }
+      .stats-bar strong { font-size: 32px; line-height: 1.1; }
+      .reels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+      .reel { display: flex; flex-direction: column; gap: 8px; margin: 0; }
+      .reel video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 12px; background: #f2f2f2; display: block; cursor: pointer; margin: 0; }
+      :root.night .reel video { background: #1a1a1a; }
+      .reel figcaption { font-weight: 500; }
+      .hint { font-size: 14px; margin-top: 12px; }
+      .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 16px 0; border-top: 1px solid #e5e5e5; }
+      .row:last-child { border-bottom: 1px solid #e5e5e5; }
+      .row b { font-weight: 500; }
+      .packages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+      .packages div { border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px; }
+      :root.night .stats-bar, :root.night .row, :root.night .packages div { border-color: #2a2a2a; }
+      .yt-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 20px; }
+      .yt-item { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+      .yt-item figcaption { font-weight: 500; }
+      .yt { aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #000; }
+      .yt iframe { width: 100%; height: 100%; border: 0; display: block; }
+      .handle { text-decoration: none; }
+      .handle:hover { text-decoration: underline; }
+      @media (max-width: 800px) {
+        main.wide { width: auto; }
+        .reels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .packages, .yt-grid { grid-template-columns: minmax(0, 1fr); }
+      }
+    </style>
   </head>
 
   <body>
-    <main>
+    <main class="wide">
       <nav>
         <div id="nav-bar">
           <a href="index.html">home</a>
@@ -23,9 +60,93 @@
         </div>
       </nav>
 
-      <section id="introduction">
-        <p>*redesigning page</p>
+      <section class="block" style="margin-top: 80px">
+        <div class="head-row">
+          <h2><a href="https://www.instagram.com/itscheffatty/" target="_blank" rel="noopener" class="handle">@itscheffatty</a></h2>
+          <span class="muted2">social media manager / video editor</span>
+        </div>
+        <p>Primary editor and social lead for a food creator. Edited short-form cooking reels and ran the posting schedule, captions, trend research and analytics across Instagram, TikTok and YouTube Shorts.</p>
+        <ul class="stats-bar">
+          <li><strong>250K &rarr; 1M+</strong><span class="muted2">Instagram followers in 6 months</span></li>
+          <li><strong>1M</strong><span class="muted2">average views per reel</span></li>
+        </ul>
+
+        <div class="reels">
+          <figure class="reel">
+            <video src="videos/super-soap.mp4" poster="videos/super-soap.jpg" muted loop playsinline preload="none" aria-label="Super soap reel"></video>
+            <figcaption><a href="https://www.instagram.com/reel/DdZFuS4t8gA/" target="_blank" rel="noopener" class="under-link">super soap &#8599;</a></figcaption>
+          </figure>
+          <figure class="reel">
+            <video src="videos/stainless.mp4" poster="videos/stainless.jpg" muted loop playsinline preload="none" aria-label="Stainless steel pan reel"></video>
+            <figcaption><a href="https://www.instagram.com/reel/DdAwa91tXbG/" target="_blank" rel="noopener" class="under-link">stainless steel &#8599;</a></figcaption>
+          </figure>
+          <figure class="reel">
+            <video src="videos/chili-crisp-pork-noodles.mp4" poster="videos/chili-crisp-pork-noodles.jpg" muted loop playsinline preload="none" aria-label="Chili crisp pork noodles reel"></video>
+            <figcaption><a href="https://www.instagram.com/reel/DbJLYZNNGmg/" target="_blank" rel="noopener" class="under-link">chili crisp pork noodles &#8599;</a></figcaption>
+          </figure>
+          <figure class="reel">
+            <video src="videos/grease-stain.mp4" poster="videos/grease-stain.jpg" muted loop playsinline preload="none" aria-label="Grease stains reel"></video>
+            <figcaption><a href="https://www.instagram.com/reel/De3AnVFT5P2/" target="_blank" rel="noopener" class="under-link">grease stains &#8599;</a></figcaption>
+          </figure>
+        </div>
+        <p class="hint muted2">tap a video for sound</p>
       </section>
+
+      <section class="block">
+        <div class="head-row">
+          <h2><a href="https://www.youtube.com/@SeattleGodsImage" target="_blank" rel="noopener" class="handle">God's Image</a></h2>
+          <span class="muted2">video producer / editor</span>
+        </div>
+        <p>Lead the video production process from filming to final edits for events, concerts, and rehearsals. Capture authentic, emotionally engaging moments that enhance the ministry&rsquo;s online presence. Manage content, exporting, and publishing to social media.</p>
+        <div class="yt" style="margin-top: 20px">
+          <iframe src="https://www.youtube-nocookie.com/embed/nsaHpMfyUX4?rel=0" title="God's Image video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="hint"><a href="https://www.youtube.com/@SeattleGodsImage" target="_blank" rel="noopener" class="handle muted2">see more &#8599;</a></p>
+      </section>
+
+      <section class="block" style="margin-bottom: 96px">
+        <div class="head-row">
+          <h2>Worship Sessions</h2>
+          <span class="muted2">video director / editor</span>
+        </div>
+        <div class="yt-grid">
+          <figure class="yt-item">
+            <div class="yt">
+              <iframe src="https://www.youtube-nocookie.com/embed/X2bTHQxHNrU?rel=0" title="David Lee Worship session video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <figcaption><a href="https://www.youtube.com/@davidleeworship" target="_blank" rel="noopener" class="handle">@davidleeworship</a></figcaption>
+          </figure>
+          <figure class="yt-item">
+            <div class="yt">
+              <iframe src="https://www.youtube-nocookie.com/embed/w8bfV28-Nq4?rel=0" title="Joy Kim worship session video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <figcaption><a href="https://www.youtube.com/@missjoykim" target="_blank" rel="noopener" class="handle">@missjoykim</a></figcaption>
+          </figure>
+        </div>
+      </section>
+
+
+
     </main>
+
+    <script>
+      // Play muted while on screen; tap one to hear it (others go quiet).
+      const vids = document.querySelectorAll('.reel video');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.play().catch(() => {}); }
+          else { e.target.pause(); }
+        });
+      }, { threshold: 0.4 });
+      vids.forEach((v) => {
+        io.observe(v);
+        v.addEventListener('click', () => {
+          const turnOn = v.muted;
+          vids.forEach((o) => { o.muted = true; });
+          v.muted = !turnOn ? true : false;
+          if (turnOn) { v.currentTime = 0; v.play().catch(() => {}); }
+        });
+      });
+    </script>
   </body>
 </html>

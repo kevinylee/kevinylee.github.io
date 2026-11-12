@@ -140,3 +140,92 @@ a {
 .under-link {
   text-decoration: underline;
 }
+
+/* projects / work page */
+.work {
+  margin-top: 64px;
+}
+
+.work h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.work h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+.work p {
+  line-height: 1.6;
+}
+
+.muted {
+  color: #666666;
+  margin-top: 0;
+}
+
+:root.night .muted {
+  color: #999999;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 1 160px;
+}
+
+.stats strong {
+  font-size: 28px;
+}
+
+.stats span {
+  color: #666666;
+}
+
+:root.night .stats span {
+  color: #999999;
+}
+
+.reel-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.reel-list li {
+  margin-bottom: 12px;
+}
+
+.quote {
+  margin: 24px 0 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.quote cite {
+  font-style: normal;
+  color: #666666;
+}
+
+/* phones */
+@media (max-width: 800px) {
+  main {
+    width: auto;
+    padding: 0 24px 48px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
