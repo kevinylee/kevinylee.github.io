@@ -229,3 +229,11 @@ a {
     width: 100%;
   }
 }
+
+.hover-link {
+  text-decoration: none;
+}
+
+.hover-link:hover {
+  text-decoration: underline;
+}
